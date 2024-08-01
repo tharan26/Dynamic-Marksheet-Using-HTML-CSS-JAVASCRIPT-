@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Cedarville+Cursive&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="marksheet">
+
+        <div class="header">
+            <p class="sno">Sr.no : 11223344</p>
+            <img class="logo" src="assets/Logo.jpeg" alt="Logo">
+            <img class="code" src="assets/qr-code.png" alt="qr-code">
+        </div>
+
+        <div class="heading1">
+            <p class="hone">Hindusthan College of Engineering & Technology</p>
+            <p class="htwo">An Autonomous Instituition Affiliated to Anna University</p>
+            <p class="hthree">Annual Statement of Marks</p>
+        </div>
+
+            <div class="table1">
+                <table>
+                    <tr>
+                        <td colspan="2"><h3>Name of the Candidate</h3><div>THARAN S</div></td>
+                        <td colspan="2"><h3>Course name with Code</h3><div>INFORMATION TECHNOLOGY-21IT5201</div></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Reg. No.</h3><div>720721110051</div></td>
+                        <td><h3>Enrollment No.</h3><div>995213456712</div></td>
+                        <td colspan="2"><h3>Authorised Training Center Name with Code</h3><div>HICET-21HIC2024</div></td>
+                    </tr>
+                </table>
+            </div>
+    
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject Code</th>
+                            <th>Subject Name</th>
+                            <th>Max. Marks</th>
+                            <th colspan="3">Marks Obtained In Figures</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>Theory</th>
+                            <th>Practical</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DFS012-101</td>
+                            <td>Fire Science and Technology</td>
+                            <td>100</td>
+                            <td><input type="number" id="t1" max="70"></td>
+                            <td><input type="number" id="p1" max="30"></td>
+                            <td><p id="tl1"></p></td>
+                        </tr>
+                        <tr>
+                            <td>DFS012-102</td>
+                            <td>Fire Prevention and Investigation</td>
+                            <td>100</td>
+                            <td><input type="number" id="t2" max="70"></td>
+                            <td><input type="number" id="p2" max="30"></td>
+                            <td><p id="tl2"></p></td>
+                        </tr>
+                        <tr>
+                            <td>DFS012-103</td>
+                            <td>Fire Protection and Survey</td>
+                            <td>100</td>
+                            <td><input type="number" id="t3" max="70"></td>
+                            <td><input type="number" id="p3" max="30"></td>
+                            <td><p id="tl3"></p></td>
+                        </tr>
+                        <tr>
+                            <td>DFS012-104</td>
+                            <td>Fire Extinction and Control</td>
+                            <td>100</td>
+                            <td><input type="number" id="t4" max="70"></td>
+                            <td><input type="number" id="p4" max="30"></td>
+                            <td><p id="tl4"></p></td>
+                        </tr>
+                        <tr>
+                            <td>DFS012-105</td>
+                            <td>Industrial Safety Management</td>
+                            <td>100</td>
+                            <td><input type="number" id="t5" max="70"></td>
+                            <td><input type="number" id="p5" max="30"></td>
+                            <td><p id="tl5"></p></td>
+                        </tr>
+                        <tr>
+                            <td>DFS012-106</td>
+                            <td>Practical I</td>
+                            <td>100</td>
+                            <td><input type="number" id="t6" max="70"></td>
+                            <td><input type="number" id="p6" max="30"></td>
+                            <td><p id="tl6"></p></td>
+                        </tr>
+                        <tr>
+                            <td>DFS012-107</td>
+                            <td>Practical II</td>
+                            <td>100</td>
+                            <td><input type="number" id="t7" max="70" ></td>
+                            <td><input type="number" id="p7" max="30"></td>
+                            <td><p id="tl7"></p></td>
+                        </tr>
+                        <tr>
+                            <td>DFS012-108</td>
+                            <td>Practical III</td>
+                            <td>100</td>
+                            <td><input type="number" id="t8" max="70"></td>
+                            <td><input type="number" id="p8" max="30"></td>
+                            <td><p id="tl8"></p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">Grand Total:<span id="gt"></span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">Month and Year of Examination: May 2024</td>
+                            <td colspan="2">No. of Subjects Offered: T5+P3=8</td>
+                            <td colspan="1">Result: <span id="res"></span></td>
+                            <td colspan="2">Percentage: <span id="perc"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="footer">
+                <h4 class="date">Date: 01/08/2024</h4>
+                <div class="sn">
+                    <h3>Johndurairaj</h3>
+                    <h4 class="sign">Deputy Controller Of Examination</h4>
+                </div>
+            </div>
+
+            <p class="para">Subject marked with * indicates Exemption</p>
+
+        </div>
+</body>
+</html>
+
