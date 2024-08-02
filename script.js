@@ -8,27 +8,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function calculateTotal() {
         let grandTotal = 0;
+        let totalSubjects = 0;
 
+        // Calculate total for theory subjects
         theoryInputs.forEach((input, index) => {
             const theoryMark = parseFloat(input.value) || 0;
-            const practicalMark = parseFloat(practicalInputs[index].value) || 0;
-            const totalMark = theoryMark + practicalMark;
+            const totalMark = theoryMark;
 
             totalDisplays[index].textContent = totalMark;
-
             grandTotal += totalMark;
+            totalSubjects++;
+        });
+
+        // Calculate total for practical subjects
+        practicalInputs.forEach((input, index) => {
+            const practicalMark = parseFloat(input.value) || 0;
+            const totalMark = practicalMark;
+
+            totalDisplays[index + theoryInputs.length].textContent = totalMark;
+            grandTotal += totalMark;
+            totalSubjects++;
         });
 
         grandTotalDisplay.textContent = grandTotal;
 
-        if (grandTotal >= 500) {
+        if (grandTotal >= 400) {
             resultDisplay.textContent = 'PASS';
         } else {
             resultDisplay.textContent = 'FAIL';
         }
 
-        const percentage = (grandTotal / 800) * 100;
-        percentageDisplay.textContent = percentage.toFixed(2)+"%";
+        const percentage = (grandTotal / (totalSubjects * 100)) * 100;
+        percentageDisplay.textContent = percentage.toFixed(2) + "%";
     }
 
     theoryInputs.forEach(input => {
