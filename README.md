@@ -43,4 +43,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Contact
 Tharan – tharan0026@gmail.com
 
-Project Link: https://github.com/tharan26/Marksheet
+Project Link: [https://github.com/tharan26/Marksheet](https://tharan26.github.io/Dynamic-Marksheet-Using-HTML-CSS-JAVASCRIPT-/)
